@@ -75,7 +75,7 @@ Les torches vacillent sur les murs, et des ombre dancent sur les peintures des s
 <tw-passagedata pid="4" name="Thot" tags="" position="316,747">&lt;h3&gt;Le Chambre de Thot&lt;/h3&gt;
 
 Vous entre un chambre enorme, rempli des oiseaux. Restee au centre de salle, il y a un homme de huite pieds. Il turne a vous face, et vous voir que son tete a la visage d&#39;une gros oiseaux. Il ouvrit son bouche, et une voix profonde echappe. &quot;Bienvenue a mon chambre voyageur. Je suis Thot, le dieux de &quot;knowledge&quot;. A procede a la prochaine etape de ton voyage, tu dois suivis mon oiseaux sacre.&quot; Si vous regardez les oiseaux presente, il ya des [[hibous-&gt;Maze]], des [[ibis-&gt;Anubis]], et des [[cygnes-&gt;Pit]].</tw-passagedata>
-<tw-passagedata pid="5" name="Maze" tags="" position="750,742">###L&#39;entrance a la maze
+<tw-passagedata pid="5" name="Maze" tags="" position="750,742">&lt;h3&gt;L&#39;entrance a la maze&lt;/h3&gt;
 
 (if: (history:) contains &quot;Maze&quot;)[Vous pensez que cette salle a l&#39;air familiere]
 Les murs de pierre rugeux extendre a la limite du lumiere. Les torches sur les murs sont tres faible ici. Il y a des passages au [[nord-&gt;maze1]], [[sud-&gt;maze2]], [[l&#39;est-&gt;maze3]], et [[l&#39;ouest-&gt;maze4]].
@@ -91,18 +91,18 @@ Vous trouvez vous-meme dans un chambre noir, avec un plafond bas. Au centre de l
 Les ombres obscure une trous dans le sol. Vous tombez la-dedans, et tout devien noir.
 
 (display: &quot;death&quot;)</tw-passagedata>
-<tw-passagedata pid="8" name="maze1" tags="" position="962,945">###Maze
+<tw-passagedata pid="8" name="maze1" tags="" position="962,945">&lt;h3&gt;Maze&lt;/h3&gt;
 
 (either: &quot;Un chambre comme tout des autres dans cette labyrinthe. Les murs sent tros proche, et votre souffle attrape dans la gorge.&quot;, &quot;Vous etes dans un salle au centre de quatre passages. Un vent mauvais souffle sur l&#39;arrier de votre cou.&quot;, &quot;Les torches ici sont tres faibles. Vous pensez qu&#39;ils vont mourir d&#39;un instant a l&#39;autre.&quot;) Les corridors receed au [[nord-&gt;Pit]] , [[sud-&gt;maze4]], [[l&#39;ouest-&gt;Maze]], et [[l&#39;est-&gt;Anubis]].</tw-passagedata>
-<tw-passagedata pid="9" name="maze2" tags="" position="960,1070">###Maze
+<tw-passagedata pid="9" name="maze2" tags="" position="960,1070">&lt;h3&gt;Maze&lt;/h3&gt;
 
 (either: &quot;Un chambre comme tout des autres dans cette labyrinthe. Les murs sent tros proche, et votre souffle attrape dans la gorge.&quot;, &quot;Vous etes dans un salle au centre de quatre passages. Un vent mauvais souffle sur l&#39;arrier de votre cou.&quot;, &quot;Les torches ici sont tres faibles. Vous pensez qu&#39;ils vont mourir d&#39;un instant a l&#39;autre.&quot;) Les corridors receed au [[sud-&gt;Anubis]], [[nord-&gt;maze4]], [[l&#39;est-&gt;maze3]], et [[l&#39;ouest-&gt;Maze]].
 </tw-passagedata>
-<tw-passagedata pid="10" name="maze3" tags="" position="1089,1081">###Maze
+<tw-passagedata pid="10" name="maze3" tags="" position="1087,1080">&lt;h3&gt;Maze&lt;/h3&gt;
 
 (either: &quot;Un chambre comme tout des autres dans cette labyrinthe. Les murs sent tros proche, et votre souffle attrape dans la gorge.&quot;, &quot;Vous etes dans un salle au centre de quatre passages. Un vent mauvais souffle sur l&#39;arrier de votre cou.&quot;, &quot;Les torches ici sont tres faibles. Vous pensez qu&#39;ils vont mourir d&#39;un instant a l&#39;autre.&quot;) Les corridors receed au [[nord-&gt;maze4]], [[sud-&gt;maze1]], [[l&#39;est-&gt;Anubis]], [[l&#39;ouest-&gt;maze3]].
 </tw-passagedata>
-<tw-passagedata pid="11" name="maze4" tags="" position="1088,940">###Maze
+<tw-passagedata pid="11" name="maze4" tags="" position="1093,937">&lt;h3&gt;Maze&lt;/h3&gt;
 
 (either: &quot;Un chambre comme tout des autres dans cette labyrinthe. Les murs sent tros proche, et votre souffle attrape dans la gorge.&quot;, &quot;Vous etes dans un salle au centre de quatre passages. Un vent mauvais souffle sur l&#39;arrier de votre cou.&quot;, &quot;Les torches ici sont tres faibles. Vous pensez qu&#39;ils vont mourir d&#39;un instant a l&#39;autre.&quot;) Les corridors receed au [[nord-&gt;Anubis]], [[sud-&gt;maze1]], [[l&#39;est-&gt;Pit]], et [[l&#39;ouest-&gt;maze2]].</tw-passagedata>
 <tw-passagedata pid="12" name="Lie" tags="" position="171,1475">(display: &quot;anubis_heart&quot;) Apres le balance se stabilise, vous voyez que votre coeur reste au bas. Anubis tourne a vous face, et crier &quot;Tu n&#39;es pas pur!&quot; Un porte ouvrir dans l&#39;air, et Anubis vous saisit, et vous jete par le porte.
@@ -121,7 +121,7 @@ Les ombres obscure une trous dans le sol. Vous tombez la-dedans, et tout devien 
 
 [[Allez Encore-&gt;Depart]]</tw-passagedata>
 <tw-passagedata pid="15" name="anubis_heart" tags="" position="144,1299">Anubis vous approche, et pousse son main devant il. Vous sentez son main vous entree, a avec un sensation deroutant, il enleve votre coeur de votre corps. Il marche au balance, et place votre coeur, qui tape encore, sur-la.</tw-passagedata>
-<tw-passagedata pid="16" name="Horus" tags="erin" position="760,1603">Vous marchez a travers la porte, et trouvez vous-meme rester sur un nuage. Devant vous voyez un homme imminente sur vous, habillé comme les autres vous avez rencontré avant. Il a un tête d&#39;un aigle. Il regarde vous avec les yeux calmes &quot;Vouz avez un coeur qui raconte la vérité, mais avez-vous un esprit qui est rempli avec sagesse? Réspond a cette question vrai, et je vous l&#39;accorde son liberté&quot; Il se déplace sa main et vous êtes levé dans l&#39;air &quot;Maintenant, J&#39;ai beacoup des temples dans Egypte et dans ces temples beaucoup des adeptes laisse-moi des offres. Que feriez-vous donnez moi?&quot;
+<tw-passagedata pid="16" name="Horus" tags="erin" position="760,1602">Vous marchez a travers la porte, et trouvez vous-meme rester sur un nuage. Devant vous voyez un homme imminente sur vous, habillé comme les autres vous avez rencontré avant. Il a un tête d&#39;un aigle. Il regarde vous avec les yeux calmes &quot;Vouz avez un coeur qui raconte la vérité, mais avez-vous un esprit qui est rempli avec sagesse? Réspond a cette question vrai, et je vous l&#39;accorde son liberté&quot; Il se déplace sa main et vous êtes levé dans l&#39;air &quot;Maintenant, J&#39;ai beacoup des temples dans Egypte et dans ces temples beaucoup des adeptes laisse-moi des offres. Que feriez-vous donnez moi?&quot;
 
 [[Des bijoux-&gt;Horus Win]]
 [[Un Oeil-&gt;Horus Loss]] </tw-passagedata>
