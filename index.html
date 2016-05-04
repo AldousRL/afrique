@@ -52,7 +52,9 @@ html {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -124,21 +126,27 @@ Les ombres obscure une trous dans le sol. Vous tombez la-dedans, et tout devien 
 <tw-passagedata pid="16" name="Horus" tags="erin" position="760,1602">Vous marchez a travers la porte, et trouvez vous-meme rester sur un nuage. Devant vous voyez un homme imminente sur vous, habillé comme les autres vous avez rencontré avant. Il a un tête d&#39;un aigle. Il regarde vous avec les yeux calmes &quot;Vouz avez un coeur qui raconte la vérité, mais avez-vous un esprit qui est rempli avec sagesse? Réspond a cette question vrai, et je vous l&#39;accorde son liberté&quot; Il se déplace sa main et vous êtes levé dans l&#39;air &quot;Maintenant, J&#39;ai beacoup des temples dans Egypte et dans ces temples beaucoup des adeptes laisse-moi des offres. Que feriez-vous donnez moi?&quot;
 
 [[Des bijoux-&gt;Horus Win]]
-[[Un Oeil-&gt;Horus Loss]] </tw-passagedata>
+[[Un Oeil-&gt;Horus Loss]]
+(E)</tw-passagedata>
 <tw-passagedata pid="17" name="chaos_death" tags="" position="136,1714">Vous saisissez le fils, et sentez vos mains s&#39;enflamment. Une feu brilliant commence a vos mains, et consume votre chair.
 
 (display: &quot;death&quot;)</tw-passagedata>
 <tw-passagedata pid="18" name="chaos_win" tags="erin" position="293,1715">Vous saisissez le fils rouge, et sentez un sentiment de soulagement se précipiter sur vous. Un poids lourd semble se lever de sa épaules. Le vent souffle dans votre visage, et dans son cheveux, vous laisser sortir une vue grande. Vous avez enfin fait votre chemin sur la tombe. Vous êtes enfin en sécurité!
 
+(E)
+
  Vous Gagnez!</tw-passagedata>
 <tw-passagedata pid="19" name="Horus Loss" tags="erin" position="644,1823">Vous choisir la bijoux. Horus secouer la tête à vous et déplace sa main rapidement. Vous tombez à travers les nuages dans le temple, jusqu&#39;à vous frapper le sol.
+
+(E)
 
 (display: &quot;death&quot;) </tw-passagedata>
 <tw-passagedata pid="20" name="Horus Win" tags="erin" position="904,1816">Vouz choisir le oeil. Horus hoche la téte à vous en accord. Vous vous sentez étant doucement mettre bas sur le sol. Horus puis de pas de côte pour révéler un passage secret. Vous suivez à travers-il jusqu&#39;à le soleil stores vos yeux et le sable touchez vos pieds. Vous avez enfin fait sortir la tombe.
   
+  (E)
   
   Vouz Gagnez!</tw-passagedata>
-<tw-passagedata pid="21" name="Header" tags="header" position="577.5,1678">{
+<tw-passagedata pid="21" name="Header" tags="header" position="577,1678">{
 (print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(\)&lt;/script&gt;&quot;)
 (if: (passage:)&#39;s tags&#39;s length &gt; 0)[
 (print: &quot;&lt;script&gt;$(&#39;html&#39;).addClass(&#39;&quot; + (passage:)&#39;s tags.join(&#39; &#39;) + &quot;&#39;\)&lt;/script&gt;&quot;)
